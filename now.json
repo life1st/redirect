@@ -1,0 +1,13 @@
+{
+  "name": "redirect",
+  "version": 2,
+  "alias": "redirect.life1st.me",
+  "builds": [
+    {"src": "index.js", "use": "@now/node"}
+  ],
+  "routes": [
+    {
+      "src": "/(.*)", "dest": "index.js"
+    }
+  ]
+}

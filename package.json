@@ -1,0 +1,28 @@
+{
+  "name": "redirect",
+  "version": "1.0.0",
+  "description": "serverless Function domain proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/life1st/redirect.git"
+  },
+  "keywords": [
+    "domain-proxy",
+    "serverless"
+  ],
+  "author": "life1st",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/life1st/redirect/issues"
+  },
+  "homepage": "https://github.com/life1st/redirect#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}
