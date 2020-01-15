@@ -3,7 +3,6 @@ const app = new Koa()
 const {table: proxy_table} = require('./config/proxy_table')
 
 app.use(async (ctx) => {
-  
   const { host } = ctx.req.headers
   const hostname = host.split(':').shift()
 
