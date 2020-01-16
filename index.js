@@ -7,7 +7,7 @@ app.use(async (ctx) => {
   const hostname = host.split(':').shift()
 
   if (Object.keys(proxy_table).includes(hostname)) {
-    ctx.status = 302
+    ctx.status = 307
     
     let toHost = proxy_table[hostname]
     if (!toHost.includes('http')) {
