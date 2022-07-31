@@ -1,0 +1,27 @@
+name: ddns
+
+on:
+  push: 
+    branches: [ master ]
+
+env:
+  CF_TOKEN: ${{secrets.CF_TOKEN}}
+
+jobs:
+  check_data:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@main
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: npm i
+      shell: bash
+    - run: node ./src/ddns.js
+      shell: bash
