@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/life1st/redirect#readme",
   "dependencies": {
+    "cloudflare-dns": "^1.0.5",
     "koa": "^2.11.0"
   }
 }
